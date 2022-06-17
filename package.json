@@ -7,6 +7,7 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
+    "@intlify/nuxt3": "^0.2.2",
     "@nuxt/content": "^2.0.0",
     "@nuxtjs/color-mode": "^3.1.4",
     "@tailwindcss/typography": "^0.5.2",

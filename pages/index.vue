@@ -8,10 +8,17 @@
       <p class="text-9xl font-bold">hahahah</p>
       <p class="text-9xl font-bold">hahahah</p>
       <p class="text-9xl font-bold">hahahah</p>
+      <p class="text-9xl font-bold">{{ $t("message") }}</p>
+      <LangSwitch />
+      <ColorSwap />
+      <Navigation />
     </div>
   </div>
 </template>
 <script lang="ts" setup>
+import LangSwitch from "@/components/LanguageInput.vue";
+import ColorSwap from "@/components/ColorSwap.vue";
+import Navigation from "@/components/Navigation.vue";
 useHead({
   title: "HOME",
   meta: [{ name: "description", content: "ウェブアプリを開発" }],
