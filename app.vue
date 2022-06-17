@@ -1,5 +1,13 @@
 <template>
-  <div>
+  <NuxtLayout name="costom">
     <NuxtPage />
-  </div>
+  </NuxtLayout>
 </template>
+
+<script lang="ts" setup>
+useHead({
+  titleTemplate: (titleChunk) => {
+    return titleChunk ? `${titleChunk} - KYOAPPS` : "KYOAPPS";
+  },
+});
+</script>
