@@ -1,5 +1,5 @@
 <template>
-  <div class="inline-flex items-center justify-center">
+  <NuxtLink class="inline-flex items-center justify-center" to="/">
     <img
       class="md:w-10 md:h-10 w-6 h-6 md:mr-4"
       src="/assets/images/logo.png"
@@ -10,5 +10,5 @@
     >
       KYOAPPS
     </p>
-  </div>
+  </NuxtLink>
 </template>
