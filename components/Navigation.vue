@@ -7,8 +7,8 @@
       <NuxtLink to="/posts">{{ $t("posts") }} / Posts</NuxtLink>
     </li>
     <li>
-      <a href="https://github.com/kyoapps-kyo/nuxt-app" target="_blank"
-        >{{ $t("source") }} / Source</a
+      <NuxtLink to="https://github.com/kyoapps-kyo/nuxt-app" target="_blank"
+        >{{ $t("source") }} / Source</NuxtLink
       >
     </li>
   </ul>

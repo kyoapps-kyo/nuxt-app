@@ -11,3 +11,21 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+[data-theme="light"] .active {
+    background-color: transparent;
+    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: solid 0.1rem #2188ff;
+}
+
+[data-theme="dark"] .active {
+    background-color: transparent;
+    background: -webkit-linear-gradient(-70deg, #a2facf 0%, #64acff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: solid 0.1rem #a2facf;
+}

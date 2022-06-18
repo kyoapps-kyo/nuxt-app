@@ -26,4 +26,10 @@ export default defineNuxtConfig({
     preference: "light", // default theme
     dataValue: "theme", // activate data-theme in <html> tag
   },
+  router: {
+    // https://router.vuejs.org/api/#routeroptions
+    options: {
+      linkActiveClass: "active",
+    },
+  },
 });
