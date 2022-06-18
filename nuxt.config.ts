@@ -22,4 +22,8 @@ export default defineNuxtConfig({
       locale: "ja",
     },
   },
+  colorMode: {
+    preference: "light", // default theme
+    dataValue: "theme", // activate data-theme in <html> tag
+  },
 });

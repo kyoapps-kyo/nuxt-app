@@ -1,7 +1,7 @@
 <template>
   <label class="swap swap-rotate">
     <!-- this hidden checkbox controls the state -->
-    <input type="checkbox" />
+    <input type="checkbox" @click="colorModeSwitch(colorMode.preference)" />
 
     <!-- sun icon -->
     <svg
@@ -26,3 +26,11 @@
     </svg>
   </label>
 </template>
+
+<script lang="ts" setup>
+const colorMode = useColorMode();
+function colorModeSwitch(color) {
+  if (color === "light") colorMode.preference = "dark";
+  else colorMode.preference = "light";
+}
+</script>
