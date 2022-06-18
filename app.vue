@@ -1,7 +1,5 @@
 <template>
-  <NuxtLayout name="costom">
-    <NuxtPage />
-  </NuxtLayout>
+  <NuxtPage />
 </template>
 
 <script lang="ts" setup>
