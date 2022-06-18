@@ -1,5 +1,5 @@
 <template>
-  <ul class="menu bg-base-100" :class="{ 'menu-horizontal': horizontal }">
+  <ul class="menu" :class="{ 'menu-horizontal': horizontal }">
     <li>
       <NuxtLink to="/Works">{{ $t("works") }}</NuxtLink>
     </li>

@@ -1,15 +1,13 @@
 <template>
   <div>
     <NuxtLayout name="custom">
-      <div>x</div>
+      <MastHead />
     </NuxtLayout>
   </div>
 </template>
 <script lang="ts" setup>
-import LangSwitch from "@/components/LanguageInput.vue";
-import ColorSwap from "@/components/ColorSwap.vue";
-import Navigation from "@/components/Navigation.vue";
-import AppLogo from "@/components/AppLogo.vue";
+import MastHead from "@/components/Masthead.vue";
+
 useHead({
   title: "HOME",
   meta: [{ name: "description", content: "ウェブアプリを開発" }],
