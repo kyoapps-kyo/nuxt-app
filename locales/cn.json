@@ -1,5 +1,9 @@
 {
-    "works": "工作 / Works",
-    "posts": "内容 / Posts",
-    "source": "源码 / Source"
+    "works": "工作・Works",
+    "posts": "内容・Posts",
+    "source": "源码・Source",
+    "appTitle": "KYOAPPS - WEB应用开发",
+    "appDescription1": "WEB应用开发,DONE IT",
+    "appDescription2": "构建、设计、运营",
+    "appDescription3": "NUXT, VUE, NODEJS"
 }

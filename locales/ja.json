@@ -1,5 +1,9 @@
 {
-    "works": "仕事 / Works",
-    "posts": "ポスト / Posts",
-    "source": "ギット / Source"
+    "works": "仕事・Works",
+    "posts": "ポスト・Posts",
+    "source": "ギット・Source",
+    "appTitle": "KYOAPPS - WebApp 開発",
+    "appDescription1": "WEB APPS 開発,DONE IT",
+    "appDescription2": "構築、ディザイン、運用",
+    "appDescription3": "NUXT, VUE, NODEJS"
 }

@@ -5,10 +5,10 @@
       src="/assets/images/logo.png"
       alt="KYOAPPS-LOGO"
     />
-    <p
+    <div
       class="text-gradient-mint-blue-dark hidden md:block md:text-2xl md:font-bold"
     >
       KYOAPPS
-    </p>
+    </div>
   </NuxtLink>
 </template>

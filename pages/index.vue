@@ -1,12 +1,14 @@
 <template>
   <div>
     <NuxtLayout name="custom">
-      <MastHead />
+      <MastHead class="" :class="{ '-mb-96': false }" />
+      <Content />
     </NuxtLayout>
   </div>
 </template>
 <script lang="ts" setup>
 import MastHead from "@/components/Masthead.vue";
+import Content from "@/components/IndexContent.vue";
 
 useHead({
   title: "HOME",

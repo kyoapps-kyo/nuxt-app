@@ -5,7 +5,7 @@
       <!-- Navbar -->
       <div class="fixed top-0 w-full">
         <div
-          class="navbar max-w-5xl mx-auto flex items-center justify-between px-8 md:px-0"
+          class="navbar max-w-5xl mx-auto flex items-center justify-between px-8 md:px-0 py-6 md:py-0"
         >
           <AppLogo />
           <div
@@ -36,7 +36,7 @@
       </div>
       <!-- Page content here -->
       <main>
-        <slot />
+        <slot :changeColor="changeColor" />
       </main>
     </div>
     <div class="drawer-side">
@@ -57,4 +57,16 @@ import LangSwitch from "@/components/LanguageInput.vue";
 import ColorSwap from "@/components/ColorSwap.vue";
 import Navigation from "@/components/Navigation.vue";
 import AppLogo from "@/components/AppLogo.vue";
+
+const changeColor = ref(false);
+const color = useColorMode();
+const newColor = computed(() => color.value);
+watch(newColor, (newVal, oldVal) => {
+  if (newVal != oldVal) {
+    changeColor.value = true;
+    setTimeout(() => {
+      changeColor.value = false;
+    }, 100);
+  }
+});
 </script>

@@ -7,6 +7,7 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
+    "@iconify/vue": "^3.2.1",
     "@intlify/nuxt3": "^0.2.2",
     "@nuxt/content": "^2.0.0",
     "@nuxtjs/color-mode": "^3.1.4",
@@ -16,6 +17,7 @@
   },
   "dependencies": {
     "@nuxtjs/tailwindcss": "^5.1.2",
-    "daisyui": "^2.15.3"
+    "daisyui": "^2.15.3",
+    "vue-writer": "^1.2.0"
   }
 }

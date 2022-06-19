@@ -1,15 +1,27 @@
-.text-gradient-pink-blue {
-    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+@font-face {
+    font-family: "LXGWWenKai";
+    src: url("/assets/fonts/LXGWWenKai-Bold.ttf");
+    font-weight: bold;
 }
 
-.text-gradient-mint-blue-dark {
-    background: -webkit-linear-gradient(-70deg, #a2facf 0%, #64acff 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+@font-face {
+    font-family: "LXGWWenKai";
+    src: url("/assets/fonts/LXGWWenKai-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "LXGWWenKai";
+    src: url("/assets/fonts/LXGWWenKai-Light.ttf");
+    font-weight: lighter;
+}
+
+p {
+    font-family: "LXGWWenKai";
+}
+
+.LXGWWenKai {
+    font-family: "LXGWWenKai";
 }
 
 [data-theme="light"] .active {
@@ -21,6 +33,14 @@
     border-bottom: solid 0.1rem #2188ff;
 }
 
+[data-theme="light"] .text-gradient {
+    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
 [data-theme="dark"] .active {
     background-color: transparent;
     background: -webkit-linear-gradient(-70deg, #a2facf 0%, #64acff 100%);
@@ -28,4 +48,11 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     border-bottom: solid 0.1rem #a2facf;
+}
+
+[data-theme="dark"] .text-gradient {
+    background: -webkit-linear-gradient(-70deg, #a2facf 0%, #64acff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
