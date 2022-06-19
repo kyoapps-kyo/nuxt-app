@@ -1,7 +1,7 @@
 <template>
   <ul class="menu" :class="{ 'menu-horizontal': horizontal }">
     <li>
-      <NuxtLink to="/Works">{{ $t("works") }}</NuxtLink>
+      <NuxtLink to="/works">{{ $t("works") }}</NuxtLink>
     </li>
     <li>
       <NuxtLink to="/posts">{{ $t("posts") }}</NuxtLink>

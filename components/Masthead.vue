@@ -20,6 +20,7 @@
 </template>
 
 <script lang="ts" setup>
+const color = useColorMode();
 const arr = ref([
   "WEB APPS 開発, DONE IT",
   "構築、ディザイン、運用",
@@ -40,5 +41,4 @@ watch(
     }
   }
 );
-const color = useColorMode();
 </script>

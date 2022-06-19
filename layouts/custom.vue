@@ -3,7 +3,7 @@
     <input id="my-drawer" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content">
       <!-- Navbar -->
-      <div class="fixed top-0 w-full">
+      <div class="fixed top-0 w-full z-50">
         <div
           class="navbar max-w-5xl mx-auto flex items-center justify-between px-8 md:px-0 py-6 md:py-0"
         >
@@ -49,7 +49,6 @@
         </div>
       </ul>
     </div>
-    <footer></footer>
   </div>
 </template>
 <script lang="ts" setup>
