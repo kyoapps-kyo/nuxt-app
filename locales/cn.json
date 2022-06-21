@@ -2,8 +2,16 @@
     "works": "工作・Works",
     "posts": "内容・Posts",
     "source": "源码・Source",
-    "appTitle": "KYOAPPS - WEB应用开发",
+    "appTitle": "KYOAPPS",
+    "appDescription": "WEB应用开发",
     "appDescription1": "WEB应用开发,DONE IT",
     "appDescription2": "构建、设计、运营",
-    "appDescription3": "NUXT, VUE, NODEJS"
+    "appDescription3": "NUXT, VUE, NODEJS",
+    "author": "Wu Yang - 午羊",
+    "authorContent": "全栈开发者，位于东京 / 京都，热衷于构建有趣的数字服务和内容，思考计划和设计使用代码解决生活中的难题，不在编程的时候，会拿着相机到处闲逛，记录有趣的影像，目前他正在筹划建立一个内容分享频道，展示平时用代码构建的有趣内容",
+    "appContent": "自己设计编写的一个，用来展示测试制作内容的网络应用，源码公开在我的git账号中，可以通过下面页脚的各种方式联系到我",
+    "work": "工作",
+    "bio": "轨迹",
+    "favorite": "兴趣",
+    "where": "在哪"
 }

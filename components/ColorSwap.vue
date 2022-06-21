@@ -32,5 +32,10 @@ const colorMode = useColorMode();
 function colorModeSwitch(color) {
   if (color === "light") colorMode.preference = "dark";
   else colorMode.preference = "light";
+  useHead({
+    htmlAttrs: {
+      class: colorMode.preference,
+    },
+  });
 }
 </script>

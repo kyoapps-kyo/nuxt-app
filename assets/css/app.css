@@ -16,12 +16,21 @@
     font-weight: lighter;
 }
 
+@font-face {
+    font-family: "JXZK";
+    src: url("/assets/fonts/JXZK.ttf");
+}
+
 p {
     font-family: "LXGWWenKai";
 }
 
 .LXGWWenKai {
     font-family: "LXGWWenKai";
+}
+
+.JXZK {
+    font-family: "JXZK";
 }
 
 [data-theme="light"] .active {

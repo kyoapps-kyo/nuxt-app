@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@nuxtjs/color-mode",
     "@intlify/nuxt3",
+    "nuxt-lodash",
   ],
   tailwindcss: {
     viewer: false,

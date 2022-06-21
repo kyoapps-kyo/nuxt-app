@@ -1,14 +1,12 @@
 <template>
-  <NuxtLayout name="custom">
-    <MastHead class="" :class="{ '-mb-96': false }" />
+  <NuxtLayout name="custom" v-slot="layoutProps">
+    <MastHead :class="{ '-mb-[45vh]': true }" :scrollY="layoutProps.scrollY" />
     <Content />
-    <Footer />
   </NuxtLayout>
 </template>
 <script lang="ts" setup>
 import MastHead from "@/components/Masthead.vue";
 import Content from "@/components/IndexContent.vue";
-import Footer from "@/components/Footer.vue";
 
 useHead({
   title: "HOME",
