@@ -5,23 +5,23 @@
     :style="`transform: translateY(${-progress * 20}vh);`"
   >
     <img
-      class="absolute w-full h-[120vh] object-cover -z-10 transition-all duration-300"
+      class="absolute w-full object-cover h-[115vh] md:h-[120vh] -z-10 transition-all duration-300"
       :src="`/assets/images/masthead-bg-${color.preference}.jpg`"
       :class="{ 'opacity-100': show, 'opacity-0': !show }"
     />
-    <div class="h-[25vh] md:h-[27vh]"></div>
+    <div class="h-[27vh] md:h-[30vh]"></div>
     <div
-      class="text-4xl md:text-7xl font-bold text-gradient transition-all duration-500 opacity-0 mb-6 md:mb-20 text-center JXZK"
+      class="text-4xl md:text-7xl font-bold text-gradient transition-all duration-500 opacity-0 mb-2 md:mb-20 text-center JXZK"
       :class="{ 'opacity-100': show }"
     >
-      {{ $t("appTitle") }}&nbsp;<span class="hidden md:inline">-</span
+      {{ $t("appTitle") }}<span class="hidden md:inline">&nbsp;-&nbsp;</span
       ><br class="md:hidden" />
-      <span class="text-lg md:text-7xl LXGWWenKai"
-        >&nbsp;{{ $t("appDescription") }}</span
-      >
+      <span class="text-lg md:text-7xl LXGWWenKai">{{
+        $t("appDescription")
+      }}</span>
     </div>
     <VueWriter
-      class="text-2xl font-bold md:text-5xl text-gradient LXGWWenKai"
+      class="text-base font-bold md:text-5xl text-gradient LXGWWenKai"
       :array="arr"
       :typeSpeed="120"
       :eraseSpeed="30"
@@ -58,16 +58,20 @@ const color = useColorMode();
 const show = ref(false);
 
 const refContainer = ref(null);
-const progress = ref(0);
+// const progress = ref(0);
 
-watchEffect(() => {
+const progress = computed(() => {
   if (refContainer.value) {
-    progress.value = Math.min(
-      1,
-      props.scrollY / refContainer.value.clientHeight
-    );
+    return Math.min(1, props.scrollY / refContainer.value.clientHeight);
   }
+  return 0;
 });
+
+// const htmlHeight = ref("100vh");
+
+// onBeforeMount(() => {
+//   htmlHeight.value = document.body.offsetHeight + 1000 + "px";
+// });
 
 onMounted(() => {
   setTimeout(() => {
